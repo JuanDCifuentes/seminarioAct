@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap')
+@import 'reset'
+
+$transparecia: rgba(255,255,255,0.2)
+$primary: #C3F8FF
+$second: #ABD9FF
+$space: 30px
+
+body
+    background-color: #7FBCD2
+    font-family: 'Shantell Sans', cursive
+    font-size: 18px
+header
+    background: url('../img/fondo_playa.jpg')
+    background-size: 1600px
+    background-repeat: no-repeat
+    background-position: center
+    nav
+        display: grid
+        grid-template-columns: 200px 1fr
+        background-color: $transparecia
+        padding: 5px $space
+        border-bottom: 1px solid #cacaca
+        .logo
+            align-content: center
+            width: 200px
+            font-family: 'Shadows Into Light', cursive
+            font-size: 1.3em
+
+            img
+                width: 50px
+                height: 50px
+                display: inline-flex
+            h1
+                display: inline-flex
+        .menu
+            display: inline-flex
+            align-items: center
+            justify-content: flex-end
+            li
+                margin-right: 20px
+    section
+        display: grid
+        grid-template-columns: 1.75fr 1fr
+        padding: 50px 40px
+        column-gap: 80px
+        form
+            padding: 60px
+            background-color: white
+            input, button
+                display: block
+                margin-bottom: $space
+            input
+                padding: 10px
+                width: calc( 100% - 20px )  
+            button
+                padding: 5px
+                font-size: 1.2em
+            .titulo-form
+                display: block
+                width: 100%
+                padding-bottom: 20px
+                font-size: 2em
+        .info
+            align-content: center
+                
+
+
+
+
+
