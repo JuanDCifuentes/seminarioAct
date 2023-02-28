@@ -55,7 +55,9 @@ header nav .menu {
   justify-content: flex-end;
 }
 header nav .menu li {
+  display: flexbox;
   margin-right: 20px;
+  padding: 5px;
 }
 header section {
   display: grid;
@@ -92,11 +94,7 @@ header section .info {
   color: #ffffff;
 }
 
-a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
 .signin {
-  display: inline-block;
-  background-color: #C3F8FF;
+  display: flexbox;
+  margin: 5px;
 }/*# sourceMappingURL=estilos.css.map */
