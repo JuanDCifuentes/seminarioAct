@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap')
 @import 'reset'
+@import 'carrucel'
 
 $transparecia: rgba(255,255,255,0.2)
 $primary: #C3F8FF
@@ -16,6 +17,7 @@ header
     background-size: 1600px
     background-repeat: no-repeat
     background-position: center
+    background-color: rgba(0,0,0,0.2) 
     nav
         display: grid
         grid-template-columns: 200px 1fr
@@ -40,14 +42,14 @@ header
             justify-content: flex-end
             li
                 margin-right: 20px
+        
     section
         display: grid
         grid-template-columns: 1.75fr 1fr
         padding: 50px 40px
         column-gap: 80px
 
-        div
-            background-color: blue
+        
 
         form
             padding: 60px
@@ -66,12 +68,15 @@ header
                 width: 100%
                 padding-bottom: 20px
                 font-size: 2em
-        
-            
+        .info
+            background-color: rgba(0,0,0,0.4) 
+            padding: 100px 
+            color: #ffffff
 
-                
 
-
+.signin 
+    display: inline-block
+    background-color: $primary
 
 
 
