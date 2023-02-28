@@ -12,6 +12,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 body {
@@ -25,6 +26,7 @@ header {
   background-size: 1600px;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 header nav {
   display: grid;
@@ -85,5 +87,16 @@ header section form .titulo-form {
   font-size: 2em;
 }
 header section .info {
-  align-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 100px;
+  color: #ffffff;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.signin {
+  display: inline-block;
+  background-color: #C3F8FF;
 }/*# sourceMappingURL=estilos.css.map */
