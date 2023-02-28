@@ -5,22 +5,29 @@
 
 $transparecia: rgba(255,255,255,0.2)
 $primary: #C3F8FF
-$second: #ABD9FF
+$second: #025988
 $space: 30px
 
+// @mixin reponsy( $medida : 480px)
+//     @media screen and (max-width: $medida) 
+//         @content
+    
+
 body
-    background-color: #7FBCD2
+    background-color: #e8fdfd
     font-family: 'Shantell Sans', cursive
     font-size: 18px
 header
     background: url('../img/fondo_playa.jpg')
-    background-size: 1600px
+    background-size: cover
     background-repeat: no-repeat
     background-position: center
     background-color: rgba(0,0,0,0.2) 
     nav
         display: grid
         grid-template-columns: 200px 1fr
+        
+        
         background-color: $transparecia
         padding: 5px $space
         border-bottom: 1px solid #cacaca
@@ -41,10 +48,17 @@ header
             align-items: center
             justify-content: flex-end
             li
-                display: flexbox
+                display: box
                 margin-right: 20px
-                padding: 5px
-        
+                padding: 10px
+                border-radius: 30px
+            li:hover 
+                background-color: rgba(255, 255, 255, 0.4)
+                color: black
+            .signin
+                background: $second
+                border-radius: 5px
+                padding: 15px
     section
         display: grid
         grid-template-columns: 1.75fr 1fr
@@ -55,27 +69,43 @@ header
 
         form
             padding: 60px
-            background-color: white
+            // background-color: rgba(255, 255, 255, 0.264)
+            border-radius: 40px
+            border: 1px solid black
+            box-shadow: 0 0 15px #222222d1
+            backdrop-filter: blur(5px)
             input, button
                 display: block
-                margin-bottom: $space
+                margin-bottom: 10px
+                border-radius: 9px
+                border: 1px solid #222
             input
                 padding: 10px
                 width: calc( 100% - 20px )  
             button
-                padding: 5px
+                padding: 7px
                 font-size: 1.2em
+                background-color: #fff
+                fo
+
+                
             .titulo-form
                 display: block
                 width: 100%
-                padding-bottom: 20px
+                padding-bottom: 40px
                 font-size: 2em
+                text-align: center
         .info
             background-color: rgba(0,0,0,0.4) 
             padding: 100px 
             color: #ffffff
+            border-radius: 25px
 
-.signin
-    display: flexbox
-    margin: 5px
+            h1
+                font-size: 2rem
+                text-align: center
+            p
+                text-align: center
+
+
 

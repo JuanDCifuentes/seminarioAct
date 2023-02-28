@@ -15,15 +15,74 @@ a {
   color: white;
 }
 
+.carrusel {
+  width: 100%;
+  height: 30em;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.destinos {
+  border: 5px solid black;
+  height: 100%;
+  overflow: hidden;
+}
+.destinos .destino {
+  border: 1px solid black;
+  height: 100%;
+  position: relative;
+  max-width: 120em;
+}
+.destinos .destino .tarjeta {
+  height: 100%;
+}
+.destinos .destino .flechas {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+i {
+  color: black;
+  font-size: 30px;
+}
+
+#tarjeta1 {
+  background: url("../img/destino_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#tarjeta2 {
+  background: url("../img/destino2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#tarjeta2 {
+  background: url("../img/destino3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 body {
-  background-color: #7FBCD2;
+  background-color: #e8fdfd;
   font-family: "Shantell Sans", cursive;
   font-size: 18px;
 }
 
 header {
   background: url("../img/fondo_playa.jpg");
-  background-size: 1600px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.2);
@@ -55,9 +114,19 @@ header nav .menu {
   justify-content: flex-end;
 }
 header nav .menu li {
-  display: flexbox;
+  display: box;
   margin-right: 20px;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 30px;
+}
+header nav .menu li:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+}
+header nav .menu .signin {
+  background: #025988;
+  border-radius: 5px;
+  padding: 15px;
 }
 header section {
   display: grid;
@@ -68,33 +137,44 @@ header section {
 }
 header section form {
   padding: 60px;
-  background-color: white;
+  border-radius: 40px;
+  border: 1px solid black;
+  box-shadow: 0 0 15px rgba(34, 34, 34, 0.8196078431);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 header section form input, header section form button {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  border-radius: 9px;
+  border: 1px solid #222;
 }
 header section form input {
   padding: 10px;
   width: calc(100% - 20px);
 }
 header section form button {
-  padding: 5px;
+  padding: 7px;
   font-size: 1.2em;
+  background-color: #fff;
 }
 header section form .titulo-form {
   display: block;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   font-size: 2em;
+  text-align: center;
 }
 header section .info {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 100px;
   color: #ffffff;
+  border-radius: 25px;
 }
-
-.signin {
-  display: flexbox;
-  margin: 5px;
+header section .info h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+header section .info p {
+  text-align: center;
 }/*# sourceMappingURL=estilos.css.map */

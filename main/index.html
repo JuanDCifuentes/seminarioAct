@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agencia de Viajes Kokosnuss</title>
+  <script src="https://kit.fontawesome.com/cd80fa60b5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/estilos.css">
+  
 </head>
 <body>
   <header>
@@ -25,10 +27,10 @@
       <div class="info">
         <h1>Agencia de Viajes kokosnuss</h1>
         <br>
-        <p>Explora el mundo con nosotros</p>
+        <p>Ven con nosotros y disfruta de planes vacacionales a diferentes destinos de colombia y el mundo, difrutaras de playas, del mar tocando tus pies, hoteles con vistas expectaculares. Disfruta en colombia del mar pacifico en Buenaventura y sus diferentes playas, o en el mar caribe, donde eres sopredido por su hermoso oceano. </p>
         <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quaerat impedit nam. Quisquam, debitis laudantium, odio nobis, quia saepe quaerat voluptates corporis similique a ullam dolore cupiditate! Sint, accusantium harum!</p>
-      </div>
+        <p>Explora el mundo con nosotros y pasa las mejores vaciones de tu vida</p>
+        </div>
       <form action="sumit">
         <h2 class="titulo-form">Registrarse</h2>
         <input type="text" name="username" placeholder="Nombre de usuario">
@@ -39,47 +41,61 @@
       </form>
     </section>
   </header>
-  <!-- <main>
-    <section>
+  <main>
+    <section class="carrusel">
       <h2>Destacados</h2>
       <div class="destinos">
-        <div class="destino">
-          <img src="destino1.jpg" alt="Destino 1">
-          <h3>Destino 1</h3>
-          <p>Descripción del destino 1</p>
+        <div class="destino" id="tarjeta1">
+          <div class="tarjeta" >
+            <h3>Destino 1</h3>
+            <p>Descripción del destino 1</p>
+            <!-- <cite>autor imagen<a href="https://pixabay.com/es/users/moorpheus-37844/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=418742">Máté Markovics</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=418742">Pixabay</a></cite> -->
+            
+          </div>
+          <div class="flechas">
+            <a href="#tarjeta3">
+              <i class="fa-thin fa-arrow-left"></i>
+            </a>
+            <a href="#tarjeta2">
+              <i class="fa-thin fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
-        <div class="destino">
-          <img src="destino2.jpg" alt="Destino 2">
-          <h3>Destino 2</h3>
-          <p>Descripción del destino 2</p>
+        <div class="destino" id="tarjeta2">
+          <div class="tarjeta">
+              
+              <h3>Destino 2</h3>
+              <p>Descripción del destino 2</p>
+              <!-- <cite>Imagen de <a href="https://pixabay.com/es/users/lumix2004-3890388/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1872998">lumix2004</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1872998">Pixabay</a></cite> -->
+          </div>
+          <div class="flechas">
+            <a href="#tarjeta1">
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <a href="#tarjeta3">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
-        <div class="destino">
-          <img src="destino3.jpg" alt="Destino 3">
-          <h3>Destino 3</h3>
-          <p>Descripción del destino 3</p>
+        <div class="destino" id="tarjeta3">
+          <div class="tarjeta">
+            
+            <h3>Destino 3</h3>
+            <p>Descripción del destino 3</p>
+            <!-- <cite>Imagen de <a href="https://pixabay.com/es/users/romaneau-834195/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=666122">romaneau</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=666122">Pixabay</a></cite> -->
+          </div>
+          <div class="flechas">
+            <a href="#tarjeta2">
+              <i class="fa-thin fa-arrow-left"></i>
+            </a>
+            <a href="#tarjeta1">
+              <i class="fa-thin fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
-    <section>
-      <h2>Testimonios</h2>
-      <div class="testimonios">
-        <div class="testimonio">
-          <img src="persona1.jpg" alt="Persona 1">
-          <blockquote>¡Increíble experiencia! Definitivamente volvería a viajar con ellos.</blockquote>
-          <cite>Persona 1</cite>
-        </div>
-        <div class="testimonio">
-          <img src="persona2.jpg" alt="Persona 2">
-          <blockquote>La mejor agencia de viajes que he conocido. El servicio es excelente.</blockquote>
-          <cite>Persona 2</cite>
-        </div>
-        <div class="testimonio">
-          <img src="persona3.jpg" alt="Persona 3">
-          <blockquote>No me arrepiento de haber elegido esta agencia para mi viaje. Todo fue perfecto.</blockquote>
-          <cite>Persona 3</cite>
-        </div>
-      </div>
-    </section>
+    
     <section>
       <h2>Contacto</h2>
       <form>
@@ -94,7 +110,7 @@
     </section>
   </main>
   <footer>
-    <p>Derechos reservados  © 2023 Viajes Increíbles</p>
-</footer> -->
+    <p>Derechos reservados  © 2023 Juan David Cifuentes</p>
+</footer>
 </body>
 </html>
