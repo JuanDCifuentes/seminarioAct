@@ -17,21 +17,26 @@ a {
 
 .carrusel {
   width: 100%;
-  height: 30em;
+  height: 40em;
   padding: 20px;
   margin: 20px 0;
 }
+.carrusel h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2.5em;
+}
 
 .destinos {
-  border: 5px solid black;
+  box-shadow: 0px 0px 20px rgba(40, 40, 40, 0.8392156863);
   height: 100%;
   overflow: hidden;
 }
 .destinos .destino {
-  border: 1px solid black;
   height: 100%;
   position: relative;
   max-width: 120em;
+  padding: 20px;
 }
 .destinos .destino .tarjeta {
   height: 100%;
@@ -49,7 +54,7 @@ a {
 }
 
 i {
-  color: black;
+  color: #ffffff;
   font-size: 30px;
 }
 
@@ -67,7 +72,7 @@ i {
   background-position: center;
 }
 
-#tarjeta2 {
+#tarjeta3 {
   background: url("../img/destino3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,7 +80,7 @@ i {
 }
 
 body {
-  background-color: #e8fdfd;
+  background-color: #f3f2f0;
   font-family: "Shantell Sans", cursive;
   font-size: 18px;
 }
@@ -86,6 +91,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.2);
+  height: 45em;
 }
 header nav {
   display: grid;
@@ -134,9 +140,11 @@ header section {
   padding: 50px 40px;
   -moz-column-gap: 80px;
        column-gap: 80px;
+  height: 90%;
 }
 header section form {
   padding: 60px;
+  height: 90%;
   border-radius: 40px;
   border: 1px solid black;
   box-shadow: 0 0 15px rgba(34, 34, 34, 0.8196078431);
@@ -144,6 +152,7 @@ header section form {
           backdrop-filter: blur(5px);
 }
 header section form input, header section form button {
+  height: 12.5%;
   display: block;
   margin-bottom: 10px;
   border-radius: 9px;
@@ -162,8 +171,9 @@ header section form .titulo-form {
   display: block;
   width: 100%;
   padding-bottom: 40px;
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
+  margin-bottom: 1em;
 }
 header section .info {
   background-color: rgba(0, 0, 0, 0.4);
@@ -172,9 +182,20 @@ header section .info {
   border-radius: 25px;
 }
 header section .info h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
+  margin-bottom: 1em;
 }
 header section .info p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.contacto {
+  margin-top: 10%;
+}
+
+footer {
+  margin-top: 2em;
   text-align: center;
 }/*# sourceMappingURL=estilos.css.map */

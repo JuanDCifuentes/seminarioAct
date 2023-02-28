@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap')
-@import 'reset'
-@import 'carrucel'
+@import 'reset', 'carrucel'
 
 $transparecia: rgba(255,255,255,0.2)
 $primary: #C3F8FF
@@ -14,15 +13,18 @@ $space: 30px
     
 
 body
-    background-color: #e8fdfd
+    background-color: #f3f2f0
     font-family: 'Shantell Sans', cursive
     font-size: 18px
+
+    
 header
     background: url('../img/fondo_playa.jpg')
     background-size: cover
     background-repeat: no-repeat
     background-position: center
     background-color: rgba(0,0,0,0.2) 
+    height: 45em
     nav
         display: grid
         grid-template-columns: 200px 1fr
@@ -64,17 +66,17 @@ header
         grid-template-columns: 1.75fr 1fr
         padding: 50px 40px
         column-gap: 80px
-
-        
+        height: 90%
 
         form
             padding: 60px
-            // background-color: rgba(255, 255, 255, 0.264)
+            height: 90%
             border-radius: 40px
             border: 1px solid black
             box-shadow: 0 0 15px #222222d1
             backdrop-filter: blur(5px)
             input, button
+                height: 12.5%
                 display: block
                 margin-bottom: 10px
                 border-radius: 9px
@@ -86,15 +88,16 @@ header
                 padding: 7px
                 font-size: 1.2em
                 background-color: #fff
-                fo
+                
 
                 
             .titulo-form
                 display: block
                 width: 100%
                 padding-bottom: 40px
-                font-size: 2em
+                font-size: 2.5em
                 text-align: center
+                margin-bottom: 1em
         .info
             background-color: rgba(0,0,0,0.4) 
             padding: 100px 
@@ -102,10 +105,20 @@ header
             border-radius: 25px
 
             h1
-                font-size: 2rem
+                font-size: 3rem
                 text-align: center
+                margin-bottom: 1em
             p
                 text-align: center
+                font-size: 1.2em
+
+.contacto
+    margin-top: 10%
+
+footer
+    margin-top: 2em
+    text-align: center
+
 
 
 
