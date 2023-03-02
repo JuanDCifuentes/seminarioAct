@@ -53,6 +53,12 @@ a {
   font-size: 3em;
   margin-bottom: 10%;
 }
+.destinos .destino .tarjeta blockquote {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
 .destinos .destino .flechas {
   height: 100%;
   top: 0;
